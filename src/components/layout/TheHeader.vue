@@ -1,5 +1,5 @@
 <template>
-  <header class="w-64">
+  <header class="w-60">
     <img :src="logo" alt="" />
   </header>
 </template>
