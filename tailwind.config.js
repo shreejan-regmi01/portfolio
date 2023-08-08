@@ -7,7 +7,8 @@ module.exports = {
         dark: "url('/src/assets/bg-dark.jpg')"
       },
       colors: {
-        secondary: '#a6a6a6' //gray
+        secondary: '#a6a6a6', //gray
+        'accent-green': 'rgb(106, 181, 185)'
       }
     },
     backgroundColor: (theme) => ({
@@ -15,8 +16,7 @@ module.exports = {
       'dark-primary': '#000', //dark
       'dark-secondary': '#1d1d1d', //dark
       'accent-red': '#fa5252', //red
-      'accent-blue': '#1b74e4', //blue
-      'accent-green': 'rgb(106, 181, 185)'
+      'accent-blue': '#1b74e4' //blue
     }),
     fontFamily: {
       primary: ['Roboto Slab', 'serif'],
