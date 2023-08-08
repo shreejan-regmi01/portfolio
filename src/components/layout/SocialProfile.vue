@@ -1,14 +1,10 @@
 <template>
-  <!-- <aside class="bg-dark-primary rounded-2xl">
-    <div class="w-full">
-      <img :src="myPic" alt="" srcset="" />
-    </div>
-  </aside> -->
   <aside>
-    <base-container class="h-full">
-      <div class="p-10">
-        <img :src="myPic" alt="" srcset="" class="w-full rounded-xl" />
+    <base-container class="h-full text-center">
+      <div class="w-3/4 m-auto">
+        <img :src="myPic" alt="" srcset="" class="w-full rounded-xl brightness-90" />
       </div>
+      <p class="font-primary text-white text-4xl pt-7 font-medium">Shreejan Regmi</p>
     </base-container>
   </aside>
 </template>
@@ -24,3 +20,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.profile-image {
+  top: -50px;
+}
+</style>

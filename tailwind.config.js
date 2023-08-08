@@ -16,7 +16,10 @@ module.exports = {
       'accent-red': '#fa5252', //red
       'accent-blue': '#1b74e4', //blue
       'accent-green': 'rgb(106, 181, 185)'
-    })
+    }),
+    fontFamily: {
+      primary: ['Roboto Slab', 'serif']
+    }
   },
   plugins: []
 }

@@ -5,9 +5,9 @@ import SocialProfile from './components/layout/SocialProfile.vue'
 </script>
 
 <template>
-  <div class="bg-dark bg-center min-h-screen p-16">
+  <div class="bg-dark bg-center min-h-screen p-16 pt-8">
     <the-header></the-header>
-    <div class="grid grid-cols-8 gap-8 pt-12">
+    <div class="grid grid-cols-8 gap-8 pt-36">
       <social-profile class="col-start-1 col-end-3"></social-profile>
       <social-profile class="col-start-3 col-end-8"></social-profile>
       <social-profile class="col-span-1"></social-profile>
@@ -20,4 +20,6 @@ import SocialProfile from './components/layout/SocialProfile.vue'
   </div>
 </template>
 
-<style scoped></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
+</style>
