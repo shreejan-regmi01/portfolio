@@ -8,21 +8,21 @@
     </base-highlight>
     <base-highlight class="p-4 rounded-xl">
       <div>
-        <i class="fa-regular fa-user fa-xl text-secondary"></i>
+        <i class="fa-regular fa-file fa-xl text-secondary"></i>
       </div>
-      <p class="text-secondary mt-2 text-sm font-medium">About</p>
+      <p class="text-secondary mt-2 text-sm font-medium">Resume</p>
     </base-highlight>
     <base-highlight class="p-4 rounded-xl">
       <div>
-        <i class="fa-regular fa-user fa-xl text-secondary"></i>
+        <i class="fa-solid fa-toolbox fa-xl text-secondary"></i>
       </div>
-      <p class="text-secondary mt-2 text-sm font-medium">About</p>
+      <p class="text-secondary mt-2 text-sm font-medium">Work</p>
     </base-highlight>
     <base-highlight class="p-4 rounded-xl">
       <div>
-        <i class="fa-regular fa-user fa-xl text-secondary"></i>
+        <i class="fa-regular fa-address-book fa-xl text-secondary"></i>
       </div>
-      <p class="text-secondary mt-2 text-sm font-medium">About</p>
+      <p class="text-secondary mt-2 text-sm font-medium">Contact</p>
     </base-highlight>
     <base-highlight class="p-4 rounded-xl">
       <div>
