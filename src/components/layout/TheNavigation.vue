@@ -1,5 +1,5 @@
 <template>
-  <base-container class="p-7 text-center h-min grid gap-5">
+  <base-container class="p-7 text-center h-min flex flex-col gap-5">
     <base-highlight class="p-4 rounded-xl active">
       <div>
         <i class="fa-regular fa-user fa-xl"></i>
@@ -28,7 +28,7 @@
       <div>
         <i class="fa-regular fa-thumbs-up fa-xl"></i>
       </div>
-      <p class="mt-2 text-sm font-medium">Testimonials</p>
+      <p class="mt-2 text-sm font-medium -ml-2">Testimonials</p>
     </base-highlight>
   </base-container>
 </template>

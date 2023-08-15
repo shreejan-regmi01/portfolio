@@ -46,12 +46,10 @@
 </template>
 
 <script>
-import MainTitle from '../components/MainTitle.vue'
 import SecondaryTitle from '../components/SecondaryTitle.vue'
 import SkillsCard from '../components/SkillsCard.vue'
 export default {
   components: {
-    MainTitle,
     SecondaryTitle,
     SkillsCard
   }
