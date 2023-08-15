@@ -12,14 +12,14 @@
           Automation/Functional QA
         </base-highlight>
         <div class="pt-4 flex flex-row gap-4 justify-center">
-          <social-icon>
-            <i class="fa-brands fa-facebook-f fa-lg" style="color: #537bce"></i>
+          <social-icon color="#537bce">
+            <i class="fa-brands fa-facebook-f fa-lg"></i>
           </social-icon>
-          <social-icon>
-            <i class="fa-brands fa-instagram fa-lg" style="color: #dd2a7b"></i>
+          <social-icon color="#dd2a7b">
+            <i class="fa-brands fa-instagram fa-lg"></i>
           </social-icon>
-          <social-icon>
-            <i class="fa-brands fa-linkedin-in fa-lg" style="color: #0a66c2"></i>
+          <social-icon color="#0a66c2">
+            <i class="fa-brands fa-linkedin-in fa-lg"></i>
           </social-icon>
         </div>
         <base-highlight class="mt-6 px-6 py-4 rounded-xl">

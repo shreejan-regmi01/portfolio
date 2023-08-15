@@ -8,7 +8,10 @@ module.exports = {
       },
       colors: {
         secondary: '#a6a6a6', //gray
-        'accent-green': 'rgb(106, 181, 185)'
+        'accent-green': 'rgb(106, 181, 185)',
+        'accent-fb': '#537bce',
+        'accent-insta': '#dd2a7b',
+        'accent-linkedin': '#0a66c2'
       }
     },
     backgroundColor: (theme) => ({
