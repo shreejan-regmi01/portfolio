@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-2">
+  <div class="flex items-center" :class="hasIconSlot ? 'gap-2' : null">
     <div class="text-accent-blue">
       <slot></slot>
     </div>
@@ -13,6 +13,11 @@ export default {
     label: {
       type: String,
       required: true
+    }
+  },
+  computed: {
+    hasIconSlot() {
+      return this.$slots.default
     }
   }
 }

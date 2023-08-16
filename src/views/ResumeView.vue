@@ -31,6 +31,11 @@
         description="Modern Era"
       ></experience-card>
     </div>
+    <div class="mt-16 grid grid-cols-2 gap-x-10">
+      <div class="">
+        <icon-heading label="Working Skills"></icon-heading>
+      </div>
+    </div>
   </base-container>
 </template>
 
