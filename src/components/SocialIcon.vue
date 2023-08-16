@@ -8,9 +8,6 @@
 export default {
   props: ['color'],
   computed: {
-    background() {
-      return `hover:bg-[${this.color}]`
-    },
     cssProps() {
       return { '--text-color': this.color }
     }

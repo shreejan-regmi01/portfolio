@@ -1,5 +1,5 @@
 <template>
-  <base-container class="border border-gray-500/50 rounded-xl">
+  <base-card>
     <div class="flex gap-4 p-4">
       <div class="translate-y-2">
         <slot></slot>
@@ -11,7 +11,7 @@
         </p>
       </div>
     </div>
-  </base-container>
+  </base-card>
 </template>
 
 <script>
