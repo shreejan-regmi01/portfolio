@@ -1,7 +1,7 @@
 <template>
   <base-container class="p-7 text-center h-min flex flex-col gap-5">
     <router-link to="/about">
-      <navigation-link label="About" :active="true">
+      <navigation-link label="About">
         <i class="fa-regular fa-user fa-xl"></i>
       </navigation-link>
     </router-link>
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.active {
+.router-link-active > div {
   background-color: #1b74e4;
   color: white;
 }
