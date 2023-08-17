@@ -1,11 +1,15 @@
 <template>
   <base-container class="p-7 text-center h-min flex flex-col gap-5">
-    <navigation-link label="About" :active="true">
-      <i class="fa-regular fa-user fa-xl"></i>
-    </navigation-link>
-    <navigation-link label="Resume">
-      <i class="fa-regular fa-file fa-xl"></i>
-    </navigation-link>
+    <router-link to="/about">
+      <navigation-link label="About" :active="true">
+        <i class="fa-regular fa-user fa-xl"></i>
+      </navigation-link>
+    </router-link>
+    <router-link to="/resume">
+      <navigation-link label="Resume">
+        <i class="fa-regular fa-file fa-xl"></i>
+      </navigation-link>
+    </router-link>
     <navigation-link label="Work">
       <i class="fa-solid fa-toolbox fa-xl"></i>
     </navigation-link>
@@ -20,9 +24,11 @@
 
 <script>
 import NavigationLink from '../NavigationLink.vue'
+import { RouterLink } from 'vue-router'
 export default {
   components: {
-    NavigationLink
+    NavigationLink,
+    RouterLink
   }
 }
 </script>

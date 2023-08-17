@@ -1,9 +1,7 @@
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import TheHeader from './components/layout/TheHeader.vue'
 import SocialProfile from './components/layout/SocialProfile.vue'
-// import AboutView from './views/AboutView.vue'
-import ResumeView from './views/ResumeView.vue'
 import TheNavigation from './components/layout/TheNavigation.vue'
 </script>
 
@@ -12,15 +10,9 @@ import TheNavigation from './components/layout/TheNavigation.vue'
     <the-header></the-header>
     <div class="grid grid-cols-8 gap-8 pt-36">
       <social-profile class="col-start-1 col-end-3"></social-profile>
-      <!-- <about-view class="col-start-3 col-end-8"></about-view> -->
-      <resume-view class="col-start-3 col-end-8"></resume-view>
+      <router-view class="col-start-3 col-end-8"></router-view>
       <the-navigation></the-navigation>
     </div>
-    <!-- <nav>
-      <RouterLink to=."/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav> -->
-    <!-- <RouterView /> -->
   </div>
 </template>
 
