@@ -23,5 +23,6 @@ export default {
 .custom:hover {
   color: white;
   background-color: var(--text-color);
+  transition: 0.15s ease-in;
 }
 </style>
