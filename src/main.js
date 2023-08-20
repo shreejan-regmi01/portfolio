@@ -8,6 +8,7 @@ import BaseButton from './components/base/BaseButton.vue'
 import BaseCard from './components/base/BaseCard.vue'
 import CopyrightText from './components/layout/CopyrightText.vue'
 import MainTitle from './components/MainTitle.vue'
+import BaseTag from './components/base/BaseTag.vue'
 import router from './router'
 
 const app = createApp(App)
@@ -17,6 +18,7 @@ app.component('BaseButton', BaseButton)
 app.component('BaseCard', BaseCard)
 app.component('CopyrightText', CopyrightText)
 app.component('MainTitle', MainTitle)
+app.component('BaseTag', BaseTag)
 app.use(router)
 
 app.mount('#app')
