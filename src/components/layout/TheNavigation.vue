@@ -10,9 +10,11 @@
         <i class="fa-regular fa-file fa-xl"></i>
       </navigation-link>
     </router-link>
-    <navigation-link label="Work">
-      <i class="fa-solid fa-toolbox fa-xl"></i>
-    </navigation-link>
+    <router-link to="/experience">
+      <navigation-link label="Experience" customClassForLabel="-ml-1">
+        <i class="fa-solid fa-toolbox fa-xl"></i>
+      </navigation-link>
+    </router-link>
     <navigation-link label="Contact">
       <i class="fa-regular fa-address-book fa-xl"></i>
     </navigation-link>
