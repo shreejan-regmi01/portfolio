@@ -19,8 +19,24 @@ export default {
 </script>
 
 <style scoped>
+.pointer.rotate {
+  transform: translateX(153%) rotateY(180deg);
+}
 .pointer.rotate > * {
   transform: rotateY(180deg);
   text-align: left;
+}
+.pointer::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  opacity: 50%;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 30px;
+  right: -7px;
+  background-color: black;
 }
 </style>
