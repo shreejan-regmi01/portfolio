@@ -1,22 +1,46 @@
 <template>
   <base-container class="pt-16 pb-8 px-14">
     <main-title headerTitle="Education & Experience" class="mb-10"></main-title>
-    <div class="w-full h-52 timeline-container relative">
+    <div class="w-full timeline-container relative">
       <div class="timeline-line-container relative w-full h-full pt-10 text-white">
         <h2
           class="font-semibold font-secondary text-xl py-2 bg-dark-primary absolute left-1/2 -ml-[54px]"
         >
           2014 - 2016
         </h2>
-        <div class="w-[40%] text-right border border-gray-500/50 p-5 -mt-4 relative pointer">
-          <h1 class="text-2xl font-semibold font-primary">HIGH SCHOOL</h1>
-          <p class="text-secondary mt-2 text-sm font-md">Arniko Higher Secondary School</p>
-          <p class="text-secondary mt-2 text-sm font-semibold">Science</p>
-        </div>
+        <ExperienceDescription
+          title="high school"
+          subtitle="arniko higher secondary school"
+          description="science"
+        ></ExperienceDescription>
+        <div class="mt-10"></div>
+        <h2
+          class="font-semibold font-secondary text-xl py-2 bg-dark-primary absolute left-1/2 -ml-[54px]"
+        >
+          2017 - 2020
+        </h2>
+        <ExperienceDescription
+          title="bachelor's degree"
+          subtitle="university of northampton"
+          description="Bsc. (Hons) Software Engineering"
+          :rotate="true"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio magnam numquam nemo
+          dolorem?
+        </ExperienceDescription>
       </div>
     </div>
   </base-container>
 </template>
+
+<script>
+import ExperienceDescription from '../components/ExperienceDescription.vue'
+export default {
+  components: {
+    ExperienceDescription
+  }
+}
+</script>
 
 <style scoped>
 .timeline-container::before {
@@ -68,10 +92,5 @@
 
 .pointer.rotate {
   transform: translateX(153%) rotateY(180deg);
-}
-
-.pointer.rotate > * {
-  transform: rotateY(180deg);
-  text-align: left;
 }
 </style>
