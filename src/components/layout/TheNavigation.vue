@@ -15,9 +15,11 @@
         <i class="fa-solid fa-toolbox fa-xl"></i>
       </navigation-link>
     </router-link>
-    <navigation-link label="Contact">
-      <i class="fa-regular fa-address-book fa-xl"></i>
-    </navigation-link>
+    <router-link to="/contact">
+      <navigation-link label="Contact">
+        <i class="fa-regular fa-address-book fa-xl"></i>
+      </navigation-link>
+    </router-link>
     <navigation-link label="Testimonials" customClassForLabel="-ml-2">
       <i class="fa-regular fa-thumbs-up fa-xl"></i>
     </navigation-link>
