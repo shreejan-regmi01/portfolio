@@ -2,29 +2,14 @@
   <base-container class="pt-16 pb-8 px-14">
     <main-title headerTitle="Contact"></main-title>
     <p class="mt-6 text-secondary font-secondary">Let's get connected!</p>
-    <div class="">
-      <div class="input-group">
-        <input
-          type="text"
-          class="bg-dark-primary text-white py-3 px-3 custom-input rounded-sm placeholder:font-medium placeholder:text-secondary placeholder:font-secondary"
-          placeholder="Firstname"
-        />
+    <form class="mt-8">
+      <div class="grid grid-cols-2 gap-8">
+        <BaseInput label="Firstname" id="firstname" />
+        <BaseInput label="Lastname" id="lastname" />
+        <BaseInput label="Email" id="email" />
+        <BaseInput label="Mobile" id="mobile" />
+        <BaseTextArea label="Message" class="col-span-2" />
       </div>
-    </div>
+    </form>
   </base-container>
 </template>
-
-<style scoped>
-.custom-input {
-  outline: 1.5px solid #474747;
-}
-
-.custom-input:focus {
-  outline: 1.5px solid #66b2ff;
-}
-
-.custom-input:focus .custom-input::placeholder {
-  position: relative;
-  top: 10px;
-}
-</style>
