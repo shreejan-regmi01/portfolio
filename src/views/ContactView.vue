@@ -21,9 +21,11 @@
           v-model="mobile"
           label="Mobile"
           id="mobile"
-          type="number"
+          type="tel"
           :error="errors.mobile"
           onwheel="return false"
+          maxlength="10"
+          inputmode="numeric"
         ></base-input>
         <base-text-area v-model="message" label="Message" class="col-span-2"></base-text-area>
         <base-button
@@ -36,7 +38,13 @@
 </template>
 
 <script>
-import { FIRSTNAME_ERR, LASTNAME_ERR, EMAIL_EMPTY_ERR, EMAIL_INVALID_ERR } from '../types'
+import {
+  FIRSTNAME_ERR,
+  LASTNAME_ERR,
+  EMAIL_EMPTY_ERR,
+  EMAIL_INVALID_ERR,
+  MOBILE_INVALID_ERR
+} from '../types'
 export default {
   data() {
     return {
@@ -69,6 +77,12 @@ export default {
         return (this.errors.email = EMAIL_INVALID_ERR)
       }
       this.errors.email = ''
+    },
+    mobile(newVal) {
+      if (isNaN(Number(newVal))) {
+        return (this.errors.mobile = MOBILE_INVALID_ERR)
+      }
+      this.errors.mobile = ''
     }
   }
 }

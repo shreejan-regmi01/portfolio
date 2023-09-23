@@ -28,10 +28,6 @@ export default {
     modelValue: {
       type: [String, Number],
       default: ''
-    },
-    maxInput: {
-      type: [Number],
-      default: null
     }
   }
 }
