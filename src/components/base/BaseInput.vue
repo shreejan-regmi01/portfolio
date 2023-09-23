@@ -2,7 +2,8 @@
   <div class="input-group relative">
     <input
       type="text"
-      class="w-full h-full form__input py-2.5 pl-3 bg-transparent text-white rounded-md font-secondary"
+      class="w-full form__input py-2.5 pl-3 bg-transparent text-white rounded-md font-secondary"
+      :class="{ error }"
       placeholder=" "
       :id="id"
       autocomplete="off"
@@ -10,6 +11,7 @@
       v-on:input="$emit('update:modelValue', $event.target.value)"
       v-bind="$attrs"
     />
+    <p v-if="error" class="text-[0.8rem] font-secondary text-red-600 mt-1">{{ error }}</p>
     <label :for="id" class="absolute font-secondary text-secondary form__label">{{ label }}</label>
   </div>
 </template>
@@ -21,6 +23,7 @@ export default {
       type: String,
       required: true
     },
+    error: String,
     id: String,
     modelValue: {
       type: [String, Number],
@@ -42,6 +45,10 @@ export default {
 
 .form__input:focus {
   border-color: #18ffff;
+}
+
+.form__input.error {
+  border-color: rgb(220, 38, 38);
 }
 
 .form__label {

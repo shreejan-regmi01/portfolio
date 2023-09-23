@@ -4,8 +4,18 @@
     <p class="mt-6 text-secondary font-secondary">Let's get connected!</p>
     <form class="mt-8">
       <div class="grid grid-cols-2 gap-8">
-        <base-input v-model="firstname" label="Firstname" id="firstname"></base-input>
-        <base-input v-model="lastname" label="Lastname" id="lastname"></base-input>
+        <base-input
+          v-model="firstname"
+          label="Firstname"
+          id="firstname"
+          :error="errors.firstname"
+        ></base-input>
+        <base-input
+          v-model="lastname"
+          label="Lastname"
+          id="lastname"
+          :error="errors.lastname"
+        ></base-input>
         <base-input v-model="email" label="Email" id="email"></base-input>
         <base-input v-model="mobile" label="Mobile" id="mobile" type="number"></base-input>
         <base-text-area v-model="message" label="Message" class="col-span-2"></base-text-area>
@@ -26,7 +36,13 @@ export default {
       lastname: '',
       email: '',
       mobile: '',
-      message: ''
+      message: '',
+      errors: {
+        firstname: 'firstname',
+        lastname: '',
+        email: '',
+        mobile: ''
+      }
     }
   }
 }
