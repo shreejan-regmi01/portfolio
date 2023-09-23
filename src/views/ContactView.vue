@@ -23,6 +23,7 @@
           id="mobile"
           type="number"
           :error="errors.mobile"
+          onwheel="return false"
         ></base-input>
         <base-text-area v-model="message" label="Message" class="col-span-2"></base-text-area>
         <base-button

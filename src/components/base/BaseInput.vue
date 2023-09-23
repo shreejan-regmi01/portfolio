@@ -28,6 +28,10 @@ export default {
     modelValue: {
       type: [String, Number],
       default: ''
+    },
+    maxInput: {
+      type: [Number],
+      default: null
     }
   }
 }
@@ -64,5 +68,18 @@ export default {
   transition: all 0.25s ease-out;
   background-color: black;
   padding-inline: 4px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.form__input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
 }
 </style>
