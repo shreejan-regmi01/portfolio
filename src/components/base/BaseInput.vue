@@ -5,6 +5,10 @@
       class="w-full h-full form__input py-2.5 pl-3 bg-transparent text-white rounded-md font-secondary"
       placeholder=" "
       :id="id"
+      autocomplete="off"
+      :value="modelValue"
+      v-on:input="$emit('update:modelValue', $event.target.value)"
+      v-bind="$attrs"
     />
     <label :for="id" class="absolute font-secondary text-secondary form__label">{{ label }}</label>
   </div>
@@ -17,7 +21,11 @@ export default {
       type: String,
       required: true
     },
-    id: String
+    id: String,
+    modelValue: {
+      type: [String, Number],
+      default: ''
+    }
   }
 }
 </script>

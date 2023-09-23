@@ -6,6 +6,8 @@
       cols="30"
       rows="10"
       class="w-full h-full form__input pt-4 px-3 bg-transparent text-white rounded-md font-secondary"
+      :value="modelValue"
+      @input="$emit('update:modelValue', $event.target.value)"
     ></textarea>
     <label for="" class="absolute font-secondary text-secondary form__label">{{ label }}</label>
   </div>
@@ -13,7 +15,7 @@
 
 <script>
 export default {
-  props: ['label']
+  props: ['label', 'modelValue']
 }
 </script>
 
