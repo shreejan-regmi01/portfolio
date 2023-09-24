@@ -2,7 +2,7 @@
   <base-container class="pt-16 pb-8 px-14">
     <main-title headerTitle="Contact"></main-title>
     <p class="mt-6 text-secondary font-secondary">Let's get connected!</p>
-    <form class="mt-8">
+    <form @submit.prevent="submitForm" class="mt-8">
       <div class="grid grid-cols-2 gap-8">
         <base-input
           v-model="firstname"
@@ -28,11 +28,12 @@
           inputmode="numeric"
         ></base-input>
         <base-text-area v-model="message" label="Message" class="col-span-2"></base-text-area>
-        <base-button
-          label="Download CV"
-          class="bg-accent-blue text-white font-medium text-lg mt-2"
-        ></base-button>
       </div>
+      <base-button
+        type="Submit"
+        label="Submit"
+        class="bg-accent-blue text-white font-medium text-lg w-1/2 mt-8 mx-auto block"
+      ></base-button>
     </form>
   </base-container>
 </template>
@@ -83,6 +84,15 @@ export default {
         return (this.errors.mobile = MOBILE_INVALID_ERR)
       }
       this.errors.mobile = ''
+    }
+  },
+  methods: {
+    submitForm() {
+      /**
+       * Todo
+       * 1. dont submit if any errors
+       * 2. if no error then all good
+       */
     }
   }
 }
