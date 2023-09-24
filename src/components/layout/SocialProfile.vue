@@ -1,7 +1,7 @@
 <template>
   <aside>
-    <base-container class="text-center px-7">
-      <div class="relative content">
+    <base-container class="text-center px-7 py-8 xl:py-0">
+      <div class="xl:relative content">
         <div class="w-10/12 m-auto">
           <img :src="myPic" alt="" srcset="" class="w-full rounded-xl brightness-90" />
         </div>
