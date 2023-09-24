@@ -1,5 +1,5 @@
 <template>
-  <p class="text-secondary font-secondary text-center mt-8 xl:mt-16">
+  <p class="text-secondary font-secondary text-center mt-9 xl:mt-16">
     &copy; {{ year }} Shreejan Regmi
   </p>
 </template>

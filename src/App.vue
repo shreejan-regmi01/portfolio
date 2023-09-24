@@ -7,7 +7,7 @@ import TheNavigation from './components/layout/TheNavigation.vue'
 
 <template>
   <!-- add bg-dark -->
-  <div class="bg-dark bg-no-repeat bg-cover min-h-screen p-4 xl:p-16 xl:pr-14 pt-8">
+  <div class="bg-dark bg-no-repeat bg-cover min-h-screen p-4 xl:p-16 xl:pr-14 xl:pt-8">
     <the-header></the-header>
     <div class="grid pt-14 gap-6 xl:grid-cols-8 xl:gap-8 xl:pt-36">
       <social-profile class="xl:col-start-1 xl:col-end-3"></social-profile>
