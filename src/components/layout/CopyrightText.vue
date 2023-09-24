@@ -1,5 +1,7 @@
 <template>
-  <p class="text-secondary font-secondary text-center mt-16">&copy; {{ year }} Shreejan Regmi</p>
+  <p class="text-secondary font-secondary text-center mt-8 xl:mt-16">
+    &copy; {{ year }} Shreejan Regmi
+  </p>
 </template>
 
 <script>
