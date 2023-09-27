@@ -6,11 +6,12 @@ import TheNavigation from './components/layout/TheNavigation.vue'
 </script>
 
 <template>
-  <div class="bg-dark bg-no-repeat bg-cover min-h-screen p-16 pr-14 pt-8">
+  <!-- add bg-dark -->
+  <div class="bg-dark bg-no-repeat bg-cover min-h-screen p-4 xl:p-16 xl:pr-14 xl:pt-8">
     <the-header></the-header>
-    <div class="grid grid-cols-8 gap-8 pt-36">
-      <social-profile class="col-start-1 col-end-3"></social-profile>
-      <router-view class="col-start-3 col-end-8"></router-view>
+    <div class="grid pt-14 gap-6 xl:grid-cols-8 xl:gap-8 xl:pt-36">
+      <social-profile class="xl:col-start-1 xl:col-end-3"></social-profile>
+      <router-view class="xl:col-start-3 xl:col-end-8"></router-view>
       <the-navigation></the-navigation>
     </div>
   </div>
