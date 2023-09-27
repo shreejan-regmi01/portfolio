@@ -1,5 +1,5 @@
 <template>
-  <base-container class="pt-16 pb-8 px-14">
+  <base-container class="pt-16 pb-8 px-6 xl:px-14">
     <main-title headerTitle="Education & Experience" class="mb-10"></main-title>
     <icon-heading label="Education" class="mb-8">
       <i class="fa-solid fa-graduation-cap fa-xl"></i>

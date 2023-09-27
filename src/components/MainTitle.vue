@@ -25,7 +25,7 @@ export default {
 /**Upto tailwind's xl breakpoint (1280px) */
 @media only screen and (max-width: 1280px) {
   #title::after {
-    width: 100px;
+    width: 0px;
   }
 }
 </style>

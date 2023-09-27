@@ -39,4 +39,18 @@
   width: 2px;
   background: rgb(166, 166, 166);
 }
+
+/**Upto tailwind's xl breakpoint (1280px) */
+@media only screen and (max-width: 1280px) {
+  .timeline-container::before {
+    left: 5%;
+  }
+  .timeline-container::after {
+    left: 5%;
+  }
+
+  .timeline-line-container::before {
+    left: 5%;
+  }
+}
 </style>
