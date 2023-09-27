@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="w-70 p-2 xl:w-[40%] text-right border border-gray-500/50 xl:p-5 -mt-4 relative pointer rounded-md"
-    :class="{ rotate }"
-  >
+  <div class="">
     <h1 class="text-2xl font-semibold font-primary capitalize">{{ title }}</h1>
     <p class="text-secondary mt-2 text-sm font-md capitalize">{{ subtitle }}</p>
     <p class="text-secondary mt-2 text-sm font-semibold capitalize">{{ description }}</p>

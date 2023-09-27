@@ -1,6 +1,7 @@
 <template>
   <div class="w-full timeline-container relative">
-    <div class="timeline-line-container relative w-full h-full pt-10 text-white">
+    <!-- <div class="timeline-line-container relative w-full h-full pt-10 text-white"> pt-10 is removed below-->
+    <div class="timeline-line-container relative w-full h-full text-white pl-9">
       <slot></slot>
     </div>
   </div>
@@ -43,14 +44,14 @@
 /**Upto tailwind's xl breakpoint (1280px) */
 @media only screen and (max-width: 1280px) {
   .timeline-container::before {
-    left: 5%;
+    left: 18px;
   }
   .timeline-container::after {
-    left: 5%;
+    left: 18px;
   }
 
   .timeline-line-container::before {
-    left: 5%;
+    left: 18px;
   }
 }
 </style>
