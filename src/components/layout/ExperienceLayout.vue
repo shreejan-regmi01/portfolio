@@ -12,7 +12,7 @@
   content: '';
   position: absolute;
   top: -5px;
-  left: 50%;
+  left: 18px;
   height: 10px;
   width: 10px;
   background: rgb(166, 166, 166);
@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   bottom: -5px;
-  left: 50%;
+  left: 18px;
   height: 10px;
   width: 10px;
   background: rgb(166, 166, 166);
@@ -36,7 +36,7 @@
   position: absolute;
   top: 0;
   height: 100%;
-  left: 50%;
+  left: 18px;
   width: 2px;
   background: rgb(166, 166, 166);
 }
@@ -44,14 +44,11 @@
 /**Upto tailwind's xl breakpoint (1280px) */
 @media only screen and (max-width: 1280px) {
   .timeline-container::before {
-    left: 18px;
   }
   .timeline-container::after {
-    left: 18px;
   }
 
   .timeline-line-container::before {
-    left: 18px;
   }
 }
 </style>
