@@ -1,9 +1,9 @@
 <template>
-  <base-container class="pt-16 pb-8 px-14">
+  <base-container class="py-8 px-6 xl:pt-16 xl:pb-8 xl:px-14">
     <main-title headerTitle="Contact"></main-title>
     <p class="mt-6 text-secondary font-secondary">Let's get connected!</p>
     <form @submit.prevent="submitForm" class="mt-8">
-      <div class="grid grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
         <base-input
           v-model="firstname"
           label="Firstname"
@@ -27,7 +27,7 @@
           maxlength="10"
           inputmode="numeric"
         ></base-input>
-        <base-text-area v-model="message" label="Message" class="col-span-2"></base-text-area>
+        <base-text-area v-model="message" label="Message" class="xl:col-span-2"></base-text-area>
       </div>
       <base-button
         type="Submit"

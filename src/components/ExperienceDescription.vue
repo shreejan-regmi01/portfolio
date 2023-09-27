@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="w-[40%] text-right border border-gray-500/50 p-5 -mt-4 relative pointer rounded-md"
-    :class="{ rotate }"
-  >
+  <div class="">
     <h1 class="text-2xl font-semibold font-primary capitalize">{{ title }}</h1>
     <p class="text-secondary mt-2 text-sm font-md capitalize">{{ subtitle }}</p>
     <p class="text-secondary mt-2 text-sm font-semibold capitalize">{{ description }}</p>
@@ -19,10 +16,10 @@ export default {
 </script>
 
 <style scoped>
-.pointer.rotate {
+.rotate {
   transform: translateX(153%) rotateY(180deg);
 }
-.pointer.rotate > * {
+.rotate > * {
   transform: rotateY(180deg);
   text-align: left;
 }
@@ -38,5 +35,24 @@ export default {
   top: 30px;
   right: -7px;
   background-color: black;
+}
+
+/**Upto tailwind's xl breakpoint (1280px) */
+@media only screen and (max-width: 1280px) {
+  .rotate {
+    transform: none;
+  }
+  .rotate > * {
+    transform: none;
+    text-align: left;
+  }
+  .pointer {
+    transform: translateX(10%) rotateY(180deg);
+  }
+
+  .pointer > * {
+    transform: rotateY(180deg);
+    text-align: left;
+  }
 }
 </style>
