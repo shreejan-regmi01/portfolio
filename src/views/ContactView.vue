@@ -64,35 +64,51 @@ export default {
   },
   watch: {
     firstname(newVal) {
-      if (newVal.trim() == '') return (this.errors.firstname = FIRSTNAME_ERR)
-      this.errors.firstname = ''
+      this.validateFirstname(newVal)
     },
     lastname(newVal) {
-      if (newVal.trim() == '') return (this.errors.lastname = LASTNAME_ERR)
-      this.errors.lastname = ''
+      this.validateLastname(newVal)
     },
     email(newVal) {
-      if (newVal.trim() == '') return (this.errors.email = EMAIL_EMPTY_ERR)
-      // eslint-disable-next-line no-useless-escape
-      if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(newVal)) {
-        return (this.errors.email = EMAIL_INVALID_ERR)
-      }
-      this.errors.email = ''
+      this.validateEmail(newVal)
     },
     mobile(newVal) {
-      if (isNaN(Number(newVal))) {
-        return (this.errors.mobile = MOBILE_INVALID_ERR)
-      }
-      this.errors.mobile = ''
+      this.validateMobile(newVal)
     }
   },
   methods: {
     submitForm() {
+      this.validateFirstname(this.firstname)
+      this.validateLastname(this.lastname)
+      this.validateEmail(this.email)
+      this.validateMobile(this.mobile)
       /**
        * Todo
        * 1. dont submit if any errors
        * 2. if no error then all good
        */
+    },
+    validateFirstname(value) {
+      if (value.trim() == '') return (this.errors.firstname = FIRSTNAME_ERR)
+      this.errors.firstname = ''
+    },
+    validateLastname(value) {
+      if (value.trim() == '') return (this.errors.lastname = LASTNAME_ERR)
+      this.errors.lastname = ''
+    },
+    validateEmail(value) {
+      if (value.trim() == '') return (this.errors.email = EMAIL_EMPTY_ERR)
+      // eslint-disable-next-line no-useless-escape
+      if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value)) {
+        return (this.errors.email = EMAIL_INVALID_ERR)
+      }
+      this.errors.email = ''
+    },
+    validateMobile(value) {
+      if (isNaN(Number(value))) {
+        return (this.errors.mobile = MOBILE_INVALID_ERR)
+      }
+      this.errors.mobile = ''
     }
   }
 }
