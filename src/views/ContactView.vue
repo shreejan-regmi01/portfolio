@@ -82,11 +82,14 @@ export default {
       this.validateLastname(this.lastname)
       this.validateEmail(this.email)
       this.validateMobile(this.mobile)
-      /**
-       * Todo
-       * 1. dont submit if any errors
-       * 2. if no error then all good
-       */
+
+      const { firstname, lastname, email, mobile } = this.$data.errors
+      if (firstname || lastname || email || mobile) {
+        console.error('Did not submit')
+        return
+      }
+      //TODO: send this data to some db and store
+      console.log(this.$data)
     },
     validateFirstname(value) {
       if (value.trim() == '') return (this.errors.firstname = FIRSTNAME_ERR)
