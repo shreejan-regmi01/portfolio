@@ -4,7 +4,7 @@
       name=""
       id=""
       cols="30"
-      rows="10"
+      :rows="isMobile() ? '5' : '10'"
       class="w-full h-full form__input pt-4 px-3 bg-transparent text-white rounded-md font-secondary"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
@@ -14,8 +14,15 @@
 </template>
 
 <script>
+import { useScreen } from '../../composables/useScreen'
 export default {
-  props: ['label', 'modelValue']
+  props: ['label', 'modelValue'],
+  setup() {
+    const { isMobile } = useScreen()
+    return {
+      isMobile
+    }
+  }
 }
 </script>
 
