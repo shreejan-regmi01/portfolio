@@ -29,10 +29,7 @@ export default {
   mounted() {
     if (this.isMobile()) {
       window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop > 85) {
-          return (this.displayHamburgerAtBottom = true)
-        }
-        return (this.displayHamburgerAtBottom = false)
+        this.displayHamburgerAtBottom = document.documentElement.scrollTop > 85
       })
     }
   },
