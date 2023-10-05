@@ -22,7 +22,7 @@ export default {
   computed: {
     classForBottomHamburger() {
       return this.displayHamburgerAtBottom
-        ? `fixed bottom-8 right-8 !bg-accent-blue transition duration-300 ease-in-out`
+        ? `fixed bottom-8 right-8 !bg-accent-blue animation-fade-in`
         : null
     }
   },
@@ -44,3 +44,21 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+</style>
