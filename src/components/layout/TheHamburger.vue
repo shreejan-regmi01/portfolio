@@ -1,12 +1,13 @@
 <template>
   <div
     class="w-12 h-11 px-3 py-3 rounded-full bg-black grid gap-y-[5px] grid-cols-1 grid-rows-3"
-    :class="classForBottomHamburger"
+    :class="classForHamburger"
+    @click="isMenuOpen = !isMenuOpen"
     ref="hamburger"
   >
-    <div class="h-[3px] bg-white rounded-sm"></div>
-    <div class="h-[3px] bg-white rounded-sm"></div>
-    <div class="h-[3px] bg-white rounded-sm"></div>
+    <div class="h-[3px] bg-white rounded-sm bar"></div>
+    <div class="h-[3px] bg-white rounded-sm bar"></div>
+    <div class="h-[3px] bg-white rounded-sm bar"></div>
   </div>
 </template>
 
@@ -16,14 +17,16 @@ import { useScreen } from '../../composables/useScreen'
 export default {
   data() {
     return {
-      displayHamburgerAtBottom: false
+      displayHamburgerAtBottom: false,
+      isMenuOpen: false
     }
   },
   computed: {
-    classForBottomHamburger() {
-      return this.displayHamburgerAtBottom
-        ? `fixed bottom-8 right-8 !bg-accent-blue animation-fade-in`
-        : null
+    classForHamburger() {
+      return {
+        active: this.isMenuOpen,
+        'fixed bottom-8 right-8 !bg-accent-blue animation-fade-in': this.displayHamburgerAtBottom
+      }
     }
   },
   mounted() {
@@ -57,5 +60,24 @@ export default {
   animation-name: fadeIn;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
+}
+
+.active > .bar:nth-child(1) {
+  transform-origin: top left;
+  transform: rotate(45deg) translate(3.5px, -3px);
+  transition: 0.5s;
+}
+.active > .bar:nth-child(2) {
+  background-color: transparent;
+  transition: 0.5s;
+}
+.active > .bar:nth-child(3) {
+  transform-origin: bottom left;
+  transform: rotate(-45deg) translate(3px, 3px);
+  transition: 0.5s;
+}
+
+.bar {
+  transition: 0.5s;
 }
 </style>
