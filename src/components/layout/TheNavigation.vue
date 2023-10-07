@@ -2,11 +2,11 @@
   <div
     v-if="isNavigationDrawerOpen"
     class="fixed left-0 top-0 w-screen h-screen bg-gray-950/70"
-    @click="$emit('backdropClicked')"
+    @click="$emit('backdrop-clicked')"
   ></div>
   <base-container
-    class="text-center flex-col max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:w-[60vw] max-lg:h-screen max-lg:rounded-none max-lg:pt-[20vh] xl:flex xl:p-7 xl:h-min xl:gap-5"
-    :class="{ hidden: !isNavigationDrawerOpen }"
+    class="text-center flex-col max-lg:transition-all max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:w-[60vw] max-lg:h-screen max-lg:rounded-none max-lg:pt-[20vh] xl:flex xl:p-7 xl:h-min xl:gap-5"
+    :class="{ 'max-lg:!w-0': !isNavigationDrawerOpen }"
   >
     <router-link to="/about">
       <navigation-link
