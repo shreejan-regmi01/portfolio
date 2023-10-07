@@ -2,7 +2,7 @@
   <div
     class="w-12 h-11 px-3 py-3 rounded-full bg-black grid gap-y-[5px] grid-cols-1 grid-rows-3 z-30"
     :class="classForHamburger"
-    @click="isMenuOpen = !isMenuOpen"
+    @click="$emit('hamburgerClicked')"
     ref="hamburger"
   >
     <div class="h-[3px] bg-white rounded-sm bar"></div>
@@ -17,14 +17,13 @@ import { useScreen } from '../../composables/useScreen'
 export default {
   data() {
     return {
-      displayHamburgerAtBottom: false,
-      isMenuOpen: false
+      displayHamburgerAtBottom: false
     }
   },
   computed: {
     classForHamburger() {
       return {
-        active: this.isMenuOpen,
+        active: this.isNavigationDrawerOpen,
         'fixed bottom-8 right-8 !bg-accent-blue animation-fade-in': this.displayHamburgerAtBottom
       }
     }
@@ -41,7 +40,9 @@ export default {
     return {
       isMobile
     }
-  }
+  },
+  inject: ['isNavigationDrawerOpen'],
+  emits: ['hamburgerClicked']
 }
 </script>
 

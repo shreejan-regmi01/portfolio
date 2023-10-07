@@ -3,7 +3,7 @@
     <div class="w-40 xl:w-60">
       <img :src="logo" alt="" />
     </div>
-    <the-hamburger class="xl:hidden"></the-hamburger>
+    <the-hamburger class="xl:hidden" @hamburger-clicked="$emit('hamburgerClicked')"></the-hamburger>
   </header>
 </template>
 
@@ -18,6 +18,7 @@ export default {
   },
   components: {
     TheHamburger
-  }
+  },
+  emits: ['hamburgerClicked']
 }
 </script>
