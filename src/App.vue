@@ -19,7 +19,10 @@ function updateNavigationDrawerState() {
     <div class="grid pt-14 gap-6 xl:grid-cols-8 xl:gap-8 xl:pt-36">
       <social-profile class="xl:col-start-1 xl:col-end-3"></social-profile>
       <router-view class="xl:col-start-3 xl:col-end-8"></router-view>
-      <the-navigation></the-navigation>
+      <the-navigation
+        @backdrop-clicked="updateNavigationDrawerState"
+        @navigation-changed="updateNavigationDrawerState"
+      ></the-navigation>
     </div>
   </div>
 </template>

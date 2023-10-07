@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-12 h-11 px-3 py-3 rounded-full bg-black grid gap-y-[5px] grid-cols-1 grid-rows-3 z-30"
+    class="w-12 h-11 px-3 py-3 rounded-full bg-black grid gap-y-[5px] grid-cols-1 grid-rows-3 z-30 cursor-pointer"
     :class="classForHamburger"
     @click="$emit('hamburgerClicked')"
     ref="hamburger"
@@ -24,7 +24,8 @@ export default {
     classForHamburger() {
       return {
         active: this.isNavigationDrawerOpen,
-        'fixed bottom-8 right-8 !bg-accent-blue animation-fade-in': this.displayHamburgerAtBottom
+        'fixed bottom-8 right-8 animation-fade-in': this.displayHamburgerAtBottom,
+        '!bg-accent-blue': this.displayHamburgerAtBottom && !this.isNavigationDrawerOpen
       }
     }
   },
