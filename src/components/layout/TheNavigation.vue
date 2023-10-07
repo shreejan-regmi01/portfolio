@@ -1,5 +1,7 @@
 <template>
-  <base-container class="p-7 text-center h-min flex flex-col gap-5">
+  <base-container
+    class="text-center flex-col max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:w-[60vw] max-lg:h-screen max-lg:rounded-none max-lg:pt-[15vh] xl:flex xl:p-7 xl:h-min xl:gap-5"
+  >
     <router-link to="/about">
       <navigation-link label="About">
         <i class="fa-regular fa-user fa-xl"></i>
