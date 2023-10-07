@@ -6,7 +6,9 @@
     <div>
       <slot></slot>
     </div>
-    <p class="xl:mt-2 text-sm font-medium" :class="customClassForLabel">{{ label }}</p>
+    <p class="xl:mt-2 text-sm font-medium" v-bind="$attrs">
+      {{ label }}
+    </p>
   </base-highlight>
 </template>
 
@@ -20,11 +22,8 @@ export default {
     active: {
       type: Boolean,
       required: false
-    },
-    customClassForLabel: {
-      type: String,
-      required: false
     }
-  }
+  },
+  inheritAttrs: false
 }
 </script>

@@ -3,17 +3,17 @@
     class="text-center flex-col max-lg:fixed max-lg:right-0 max-lg:top-0 max-lg:w-[60vw] max-lg:h-screen max-lg:rounded-none max-lg:pt-[15vh] xl:flex xl:p-7 xl:h-min xl:gap-5"
   >
     <router-link to="/about">
-      <navigation-link label="About">
+      <navigation-link label="About" class="max-lg:pl-[1px]">
         <i class="fa-regular fa-user fa-xl"></i>
       </navigation-link>
     </router-link>
     <router-link to="/resume">
-      <navigation-link label="Resume">
+      <navigation-link label="Resume" class="max-lg:pl-1">
         <i class="fa-regular fa-file fa-xl"></i>
       </navigation-link>
     </router-link>
     <router-link to="/experience">
-      <navigation-link label="Experience" customClassForLabel="-ml-1">
+      <navigation-link label="Experience" class="xl:-ml-1">
         <i class="fa-solid fa-toolbox fa-xl"></i>
       </navigation-link>
     </router-link>
@@ -22,7 +22,7 @@
         <i class="fa-regular fa-address-book fa-xl"></i>
       </navigation-link>
     </router-link>
-    <navigation-link label="Testimonials" customClassForLabel="-ml-2">
+    <navigation-link label="Testimonials" class="xl:-ml-2">
       <i class="fa-regular fa-thumbs-up fa-xl"></i>
     </navigation-link>
   </base-container>
