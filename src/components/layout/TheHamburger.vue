@@ -24,7 +24,8 @@ export default {
     classForHamburger() {
       return {
         active: this.isNavigationDrawerOpen,
-        'fixed bottom-8 right-8 !bg-accent-blue animation-fade-in': this.displayHamburgerAtBottom
+        'fixed bottom-8 right-8 animation-fade-in': this.displayHamburgerAtBottom,
+        '!bg-accent-blue': this.displayHamburgerAtBottom && !this.isNavigationDrawerOpen
       }
     }
   },
