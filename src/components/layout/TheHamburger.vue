@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-12 h-11 px-3 py-3 rounded-full bg-black grid gap-y-[5px] grid-cols-1 grid-rows-3 z-30"
+    class="w-12 h-11 px-3 py-3 rounded-full bg-black grid gap-y-[5px] grid-cols-1 grid-rows-3 z-30 cursor-pointer"
     :class="classForHamburger"
     @click="$emit('hamburgerClicked')"
     ref="hamburger"

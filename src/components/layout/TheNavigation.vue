@@ -9,26 +9,42 @@
     :class="{ hidden: !isNavigationDrawerOpen }"
   >
     <router-link to="/about">
-      <navigation-link label="About" class="max-lg:pl-[1px]">
+      <navigation-link
+        label="About"
+        class="max-lg:pl-[1px]"
+        @navigation-changed="$emit('navigation-changed')"
+      >
         <i class="fa-regular fa-user fa-xl"></i>
       </navigation-link>
     </router-link>
     <router-link to="/resume">
-      <navigation-link label="Resume" class="max-lg:pl-1">
+      <navigation-link
+        label="Resume"
+        class="max-lg:pl-1"
+        @navigation-changed="$emit('navigation-changed')"
+      >
         <i class="fa-regular fa-file fa-xl"></i>
       </navigation-link>
     </router-link>
     <router-link to="/experience">
-      <navigation-link label="Experience" class="xl:-ml-1">
+      <navigation-link
+        label="Experience"
+        class="xl:-ml-1"
+        @navigation-changed="$emit('navigation-changed')"
+      >
         <i class="fa-solid fa-toolbox fa-xl"></i>
       </navigation-link>
     </router-link>
     <router-link to="/contact">
-      <navigation-link label="Contact">
+      <navigation-link label="Contact" @navigation-changed="$emit('navigation-changed')">
         <i class="fa-regular fa-address-book fa-xl"></i>
       </navigation-link>
     </router-link>
-    <navigation-link label="Testimonials" class="xl:-ml-2">
+    <navigation-link
+      label="Testimonials"
+      class="xl:-ml-2"
+      @navigation-changed="$emit('navigation-changed')"
+    >
       <i class="fa-regular fa-thumbs-up fa-xl"></i>
     </navigation-link>
   </base-container>
@@ -43,7 +59,7 @@ export default {
     RouterLink
   },
   inject: ['isNavigationDrawerOpen'],
-  emits: ['backdropClicked']
+  emits: ['backdrop-clicked', 'navigation-changed']
 }
 </script>
 
