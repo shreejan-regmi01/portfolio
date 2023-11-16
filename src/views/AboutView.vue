@@ -8,8 +8,8 @@
       their development workflow from scratch.
     </p>
     <p class="mt-6 text-secondary font-secondary text-base w-[90%]">
-      Having remotely collaborated with companies across the USA and Australia, I have worked
-      alongside distributed teams across Nepal, India, Phillipines, USA and Australia.
+      Having remotely collaborated with international firms, I have worked alongside distributed
+      teams across Nepal, India, Phillipines, USA and Australia.
     </p>
     <secondary-title label="What I Do!" class="mt-8"></secondary-title>
     <div class="grid mt-7 gap-6 xl:grid-cols-2">
