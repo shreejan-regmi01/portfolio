@@ -54,6 +54,11 @@ export default {
     ExperienceLayout,
     IconHeading,
     ExperienceTitle
+  },
+  head() {
+    return {
+      title: 'Experience | Shreejan Regmi'
+    }
   }
 }
 </script>

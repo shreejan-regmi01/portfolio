@@ -113,6 +113,11 @@ export default {
       }
       this.errors.mobile = ''
     }
+  },
+  head() {
+    return {
+      title: 'Contact | Shreejan Regmi'
+    }
   }
 }
 </script>

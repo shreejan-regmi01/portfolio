@@ -75,6 +75,11 @@ export default {
     IconHeading,
     ExperienceCard,
     BaseExpbar
+  },
+  head() {
+    return {
+      title: 'Resume | Shreejan Regmi'
+    }
   }
 }
 </script>

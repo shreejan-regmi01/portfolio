@@ -1,6 +1,7 @@
 import './assets/main.css'
 
 import { createApp } from 'vue'
+import { createHead, VueHeadMixin } from '@unhead/vue'
 import App from './App.vue'
 import BaseContainer from './components/base/BaseContainer.vue'
 import BaseHighlight from './components/base/BaseHighlight.vue'
@@ -14,6 +15,11 @@ import BaseTextArea from './components/base/BaseTextArea.vue'
 import router from './router'
 
 const app = createApp(App)
+
+const head = createHead()
+app.use(head)
+app.mixin(VueHeadMixin)
+
 app.component('BaseContainer', BaseContainer)
 app.component('BaseHighlight', BaseHighlight)
 app.component('BaseButton', BaseButton)

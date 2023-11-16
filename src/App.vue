@@ -1,8 +1,19 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import { useHead } from '@unhead/vue'
 import TheHeader from './components/layout/TheHeader.vue'
 import SocialProfile from './components/layout/SocialProfile.vue'
 import TheNavigation from './components/layout/TheNavigation.vue'
+
+useHead({
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Professional software automation QA engineer based in Nepal with over 2 years experience, specializing in automation and manual testing. Proven expertise with tools like Cypress, Playwright ensuring robust and high-quality software solutions.'
+    }
+  ]
+})
 
 import { provide, ref } from 'vue'
 const isNavigationDrawerOpen = ref(false)

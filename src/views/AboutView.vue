@@ -52,6 +52,11 @@ export default {
   components: {
     SecondaryTitle,
     SkillsCard
+  },
+  head() {
+    return {
+      title: 'Portfolio | Shreejan Regmi'
+    }
   }
 }
 </script>
