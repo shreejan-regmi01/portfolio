@@ -2,13 +2,14 @@
   <base-container class="py-8 px-6 xl:pt-16 xl:pb-8 xl:px-14">
     <main-title headerTitle="About"></main-title>
     <p class="mt-6 text-secondary font-secondary text-base w-[90%]">
-      I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development
-      and print media. I enjoy turning complex problems into simple, beautiful and intuitive
-      designs.
+      I'm an experienced automation QA Engineer based in Nepal with over 2 years of industry
+      experience. I have been involved in automation and manual testing of enterprise web
+      applications in the FinTech industry. I have helped companies adopt automation testing to
+      their development workflow from scratch.
     </p>
     <p class="mt-6 text-secondary font-secondary text-base w-[90%]">
-      My aim is to bring across your message and identity in the most creative way. I created web
-      design for many famous brand companies.
+      Having remotely collaborated with companies across the USA and Australia, I have worked
+      alongside distributed teams across Nepal, India, Phillipines, USA and Australia.
     </p>
     <secondary-title label="What I Do!" class="mt-8"></secondary-title>
     <div class="grid mt-7 gap-6 xl:grid-cols-2">
