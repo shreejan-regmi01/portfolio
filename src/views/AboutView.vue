@@ -14,32 +14,28 @@
     <secondary-title label="What I Do!" class="mt-8"></secondary-title>
     <div class="grid mt-7 gap-6 xl:grid-cols-2">
       <skills-card
-        title="Functional Testing"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem, esse tempora
-          officiis rem"
+        title="Automation Testing"
+        subtitle="Creating end-to-end automated tests using Cypress, Selenium, and Playwright and integrating it with existing CI/CD pipelines."
       >
-        <i class="fa-solid fa-bug-slash fa-2xl text-purple-500"></i>
+        <i class="fa-solid fa-gears fa-2xl text-purple-400"></i>
       </skills-card>
       <skills-card
-        title="Functional Testing"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem, esse tempora
-          officiis rem"
+        title="Manual Testing"
+        subtitle="QA analysis along with functional & UI testing of new features, improvements, etc. Sound experience creating out of the box test cases."
       >
-        <i class="fa-solid fa-bug-slash fa-2xl text-purple-500"></i>
+        <i class="fa-solid fa-bug-slash fa-2xl text-yellow-300"></i>
       </skills-card>
       <skills-card
-        title="Functional Testing"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem, esse tempora
-          officiis rem"
+        title="API Testing"
+        subtitle="Testing expected functionality, security, performance, and reliablity of APIs. Experienced with tools: Postman, Insomnia, Cypress."
       >
-        <i class="fa-solid fa-bug-slash fa-2xl text-purple-500"></i>
+        <i class="fa-solid fa-server fa-2xl text-red-400"></i>
       </skills-card>
       <skills-card
-        title="Functional Testing"
-        subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem, esse tempora
-          officiis rem"
+        title="Performance Testing"
+        subtitle="Load testing and stress testing using JMeter."
       >
-        <i class="fa-solid fa-bug-slash fa-2xl text-purple-500"></i>
+        <i class="fa-solid fa-gauge-high fa-2xl text-accent-blue"></i>
       </skills-card>
     </div>
     <copyright-text></copyright-text>
