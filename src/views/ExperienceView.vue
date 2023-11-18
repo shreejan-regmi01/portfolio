@@ -6,11 +6,9 @@
     </icon-heading>
     <experience-layout>
       <experience-title> 2014 - 2016 </experience-title>
-      <ExperienceDescription
-        title="high school"
-        subtitle="arniko higher secondary school"
-        description="science"
-      ></ExperienceDescription>
+      <ExperienceDescription title="high school" subtitle="arniko higher secondary school">
+        Studied Physics, Chemistry, Biology, and Maths</ExperienceDescription
+      >
       <div class="mt-10"></div>
       <experience-title> 2017 - 2020 </experience-title>
       <ExperienceDescription
@@ -19,8 +17,9 @@
         description="Bsc. (Hons) Software Engineering"
         :rotate="true"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio magnam numquam nemo
-        dolorem?
+        Graduated with First Class Honours, the highest division. Excellent hands-on and practical
+        course with multiple projects in each semester. Learnt a lot about programming, software
+        development principles, agile methodologies, and many more.
       </ExperienceDescription>
     </experience-layout>
     <icon-heading label="Experience" class="mt-16 mb-8">
@@ -32,7 +31,23 @@
         title="Automation/Functional QA Engineer"
         subtitle="CarClarity"
         description="responsibilities"
-      ></ExperienceDescription>
+      >
+        <ul class="ml-4 list-disc">
+          <li>Planning out test automation architecture for existing web applications</li>
+          <li>Writing automated tests for legacy systems</li>
+          <li>Co-ordinating with dev team to write automated tests for new features</li>
+          <li>
+            Attending requirements planning meeting & helping product owner in formulating the
+            requirements
+          </li>
+          <li>Analyzing requirement spec documents and preparing test plan documentation</li>
+          <li>Writing test cases for new web applications and features</li>
+          <li>UI testing to ensure UI resembles mockups as closely as possible</li>
+          <li>Functional & API testing</li>
+          <li>Reproducing complex production bugs</li>
+          <li>Running automated regression suites and maintaining/updating test scripts</li>
+        </ul>
+      </ExperienceDescription>
       <div class="mt-10"></div>
       <experience-title>2021 - 2022</experience-title>
       <ExperienceDescription title="QA Engineer" subtitle="WhiteHat Engineering" :rotate="true">

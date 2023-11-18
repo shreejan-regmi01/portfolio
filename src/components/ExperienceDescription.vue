@@ -3,7 +3,7 @@
     <h1 class="text-2xl font-semibold font-primary capitalize">{{ title }}</h1>
     <p class="text-secondary mt-2 text-sm font-md capitalize">{{ subtitle }}</p>
     <p class="text-secondary mt-2 text-sm font-semibold capitalize">{{ description }}</p>
-    <div class="pt-4 font-light">
+    <div class="pt-2 font-light">
       <slot></slot>
     </div>
   </div>
