@@ -50,9 +50,22 @@
       </ExperienceDescription>
       <div class="mt-10"></div>
       <experience-title>2021 - 2022</experience-title>
-      <ExperienceDescription title="QA Engineer" subtitle="WhiteHat Engineering" :rotate="true">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio magnam numquam nemo
-        dolorem?
+      <ExperienceDescription
+        title="QA Engineer"
+        subtitle="WhiteHat Engineering"
+        :rotate="true"
+        description="responsibilities"
+      >
+        <ul class="ml-4 list-disc">
+          <li>
+            Adapting and starting test automation using Cypress for existing documented manual test
+            cases
+          </li>
+          <li>Writing automated tests for new and existing features</li>
+          <li>Peer-reviewing pull requests of colleagues for test scripts</li>
+          <li>Functional and UI testing of new features</li>
+          <li>Reproducing and logging bugs reported by operations team</li>
+        </ul>
       </ExperienceDescription>
     </experience-layout>
   </base-container>
