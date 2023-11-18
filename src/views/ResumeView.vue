@@ -11,26 +11,26 @@
       </icon-heading>
       <div class="order-2 xl:order-3 grid gap-5">
         <experience-card
-          header="2021-2023"
-          title="Phd. in Something"
-          description="Modern Era"
+          header="2014-2016"
+          title="High School"
+          description="Arniko Higher Secondary School"
         ></experience-card>
         <experience-card
-          header="2021-2023"
-          title="Phd. in Something"
-          description="Modern Era"
+          header="2017-2020"
+          title="Bsc. (Hons) Software Engineering"
+          description="University of Northampton"
         ></experience-card>
       </div>
       <div class="order-4 grid gap-5">
         <experience-card
-          header="2021-2023"
-          title="Phd. in Something"
-          description="Modern Era"
+          header="2021-2022"
+          title="QA Engineer"
+          description="WhiteHat Engineering"
         ></experience-card>
         <experience-card
-          header="2021-2023"
-          title="Phd. in Something"
-          description="Modern Era"
+          header="2022 - Present"
+          title="Automation/Functional QA Engineer"
+          description="CarClarity"
         ></experience-card>
       </div>
     </div>
